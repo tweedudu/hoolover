@@ -1,0 +1,85 @@
+    /* Reset e estilos básicos */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main {
+        flex: 1;
+        padding: 2rem;
+    }
+    
+    /* Estilos do seletor de páginas */
+    .page-selector {
+        background-color: #f8f9fa;
+        padding: 1.5rem 0;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+    }
+    
+    .page-numbers {
+        display: inline-flex;
+        gap: 0.5rem;
+        list-style: none;
+    }
+    
+    .page-number {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #ffffff;
+        color: #333333;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 1px solid #e0e0e0;
+    }
+    
+    .page-number:hover {
+        background-color: #007bff;
+        color: white;
+        transform: scale(1.1);
+        border-color: #007bff;
+        box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+    }
+    
+    .page-number.active {
+        background-color: #0056b3;
+        color: white;
+        border-color: #0056b3;
+    }
+    
+    .page-number.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    
+    .page-number.disabled:hover {
+        background-color: #ffffff;
+        color: #333333;
+        transform: none;
+        box-shadow: none;
+    }
+    
+    /* Rodapé adicional */
+    .site-footer {
+        background-color: #343a40;
+        color: #ffffff;
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    body{background-color: rgb(184, 226, 241);}
+        h1{text-align:center}
+p{text-align: center;}
